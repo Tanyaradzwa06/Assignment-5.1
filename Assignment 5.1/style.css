@@ -1,0 +1,179 @@
+css
+/* General page styles */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f4f8;
+    color: #263238;
+    line-height: 1.7;
+}
+
+/* Header */
+.site-header {
+    background-color: #17365d;
+    color: #ffffff;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+.site-header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+.site-header p {
+    margin-bottom: 0;
+    color: #e2eaf5;
+}
+
+/* Navigation */
+.navigation {
+    background-color: #24527a;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 14px;
+}
+
+.navigation a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+}
+
+.navigation a:hover {
+    background-color: #3876a8;
+}
+
+.navigation a:focus-visible {
+    outline: 3px solid #ffdc73;
+    outline-offset: 3px;
+}
+
+/* Main content */
+.container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+section {
+    margin-bottom: 25px;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+}
+
+h2 {
+    color: #17365d;
+    font-size: 26px;
+    margin-top: 0;
+    border-bottom: 2px solid #dce8f5;
+    padding-bottom: 8px;
+}
+
+h3 {
+    color: #24527a;
+    font-size: 20px;
+}
+
+p {
+    font-size: 16px;
+}
+
+/* Links */
+a {
+    color: #075ca8;
+}
+
+a:hover {
+    color: #003b70;
+}
+
+a:focus-visible {
+    outline: 3px solid #80b7f3;
+    outline-offset: 3px;
+}
+
+/* Course cards */
+.course-card {
+    background-color: #f7f9fc;
+    border-left: 5px solid #24527a;
+    padding: 18px;
+    margin: 18px 0;
+    border-radius: 5px;
+}
+
+.course-card h3 {
+    margin-top: 0;
+}
+
+/* Call-to-action link */
+.button-link {
+    display: inline-block;
+    background-color: #24527a;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 18px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.button-link:hover {
+    background-color: #17365d;
+    color: #ffffff;
+}
+
+/* Footer */
+.site-footer {
+    background-color: #17365d;
+    color: #ffffff;
+    text-align: center;
+    padding: 18px;
+}
+
+.site-footer p {
+    margin: 0;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .site-header h1 {
+        font-size: 25px;
+    }
+
+    .navigation {
+        gap: 5px;
+    }
+
+    .navigation a {
+        padding: 8px 10px;
+    }
+
+    .container {
+        margin: 18px auto;
+        padding: 0 12px;
+    }
+
+    section {
+        padding: 18px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+}
